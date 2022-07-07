@@ -7,6 +7,25 @@ div{
     margin-right: 5px;
 }
 
+body{
+    background-image: linear-gradient(white, rgb(0, 132, 255));
+    height: 100vh;
+}
+
+.five-day{
+    
+    background-color: rgba(0, 26, 144, 0.75);
+    color:white;
+}
+
+.col-8{
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.col-3{
+    background-color: rgb(255, 255, 255, 0.75);
+}
+
 h1{
 
     display: flex;
