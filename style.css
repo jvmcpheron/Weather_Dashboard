@@ -1,0 +1,31 @@
+div{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#citySearch{
+    width: 14vw;
+    margin-right: 5px;
+}
+
+h1{
+
+    display: flex;
+    font-size:calc(50px + 4vw);
+    margin-bottom: 50px;
+    margin-top: 35px;
+    color: rgb(19, 19, 19);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+h2{
+    font-size:calc(25px + 1vw);
+}
+
+h3{
+    font-size:calc(20px + 1vw);
+}
+
+.blue{
+    color: rgb(53, 53, 255);
+}
