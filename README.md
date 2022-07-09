@@ -1,6 +1,6 @@
 # Weather_Dashboard
 
-This weather dashboard provides users with weather information using third-party API's to access the necessary data.
+This weather dashboard provides users with weather information using a third-party API to access the necessary data. Bootstrap and vanilla CSS were used to style the site.
 
 ## Getting Started
 
