@@ -90,7 +90,6 @@ document.getElementById('city-three').textContent = localStorage.getItem('sugges
     document.getElementById("wind-three").innerHTML = data.forecast.forecastday[2].day.maxwind_mph;
     document.getElementById("hum-three").innerHTML = data.forecast.forecastday[2].day.avghumidity;
 
-    
 
 
   });
