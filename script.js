@@ -1,5 +1,5 @@
 const apiKey = '59d51aff817d40719e5231234220807';
-const baseWeatherUrl = 'http://api.weatherapi.com/v1';
+const baseWeatherUrl = 'https://api.weatherapi.com/v1';
 let city = "Chicago"
 const searchBtn = document.getElementsByClassName('search')[0];
 let suggestedOne = "No City Yet";
@@ -17,7 +17,7 @@ document.getElementById("city").innerHTML = city
 
 let forecastData = {};
 
-var getData = fetch(`http://api.weatherapi.com/v1/forecast.json?key=59d51aff817d40719e5231234220807&q=${city}&days=7`)
+var getData = fetch(`https://api.weatherapi.com/v1/forecast.json?key=59d51aff817d40719e5231234220807&q=${city}&days=7`)
   .then(function(response) {
     if (response.ok) {
         return response.json();
@@ -71,7 +71,7 @@ document.getElementById('city-three').textContent = localStorage.getItem('sugges
 
     document.getElementById("city").innerHTML = city
     console.log(city);
-    getData = fetch(`http://api.weatherapi.com/v1/forecast.json?key=59d51aff817d40719e5231234220807&q=${city}&days=7`)
+    getData = fetch(`https://api.weatherapi.com/v1/forecast.json?key=59d51aff817d40719e5231234220807&q=${city}&days=7`)
   .then(function(response) {
     if (response.ok) {
         return response.json();
@@ -109,7 +109,7 @@ document.getElementById('city-one').addEventListener("click" , ()=>{
 
     document.getElementById("city").innerHTML = city
     console.log(city);
-    getData = fetch(`http://api.weatherapi.com/v1/forecast.json?key=59d51aff817d40719e5231234220807&q=${city}&days=7`)
+    getData = fetch(`https://api.weatherapi.com/v1/forecast.json?key=59d51aff817d40719e5231234220807&q=${city}&days=7`)
   .then(function(response) {
     if (response.ok) {
         return response.json();
@@ -143,7 +143,7 @@ document.getElementById('city-two').addEventListener("click" , ()=>{
 
     document.getElementById("city").innerHTML = city
     console.log(city);
-    getData = fetch(`http://api.weatherapi.com/v1/forecast.json?key=59d51aff817d40719e5231234220807&q=${city}&days=7`)
+    getData = fetch(`https://api.weatherapi.com/v1/forecast.json?key=59d51aff817d40719e5231234220807&q=${city}&days=7`)
   .then(function(response) {
     if (response.ok) {
         return response.json();
@@ -177,7 +177,7 @@ document.getElementById('city-three').addEventListener("click" , ()=>{
 
     document.getElementById("city").innerHTML = city
     console.log(city);
-    getData = fetch(`http://api.weatherapi.com/v1/forecast.json?key=59d51aff817d40719e5231234220807&q=${city}&days=7`)
+    getData = fetch(`https://api.weatherapi.com/v1/forecast.json?key=59d51aff817d40719e5231234220807&q=${city}&days=7`)
   .then(function(response) {
     if (response.ok) {
         return response.json();
