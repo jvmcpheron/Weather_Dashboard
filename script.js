@@ -2,15 +2,7 @@ const apiKey = '59d51aff817d40719e5231234220807';
 const baseWeatherUrl = 'https://api.weatherapi.com/v1';
 let city = "Chicago"
 const searchBtn = document.getElementsByClassName('search')[0];
-let suggestedOne = "No City Yet";
-let suggestedTwo = "No City Yet";
-let suggestedThree = "No City Yet";
 
-
-
-document.getElementById('city-one').textContent = localStorage.getItem('suggestedOne');
-document.getElementById('city-two').textContent = localStorage.getItem('suggestedTwo');
-document.getElementById('city-three').textContent = localStorage.getItem('suggestedThree');
 
 
 document.getElementById("city").innerHTML = city
@@ -42,32 +34,8 @@ getData
 
 searchBtn.addEventListener("click" , ()=>{
     city = document.getElementById("citySearch").value;
-    if (city === localStorage.getItem('suggestedOne')){
-        console.log("already top result");
-    }else if (localStorage.getItem('suggestedOne') === "No City Yet"){
-            suggestedOne = city;
-    }else if (localStorage.getItem('suggestedTwo') === "No City Yet"){
-        suggestedTwo = suggestedOne;
-        suggestedOne = city;
-    }else {
-        if (city === localStorage.getItem('suggestedTwo')){
-            suggestedTwo = suggestedOne;
-            suggestedOne = city;
-        } else {
-            suggestedThree = suggestedTwo;
-            suggestedTwo = suggestedOne;
-            suggestedOne = city;
-        }
 
-    }
-        
-      localStorage.setItem('suggestedOne' , suggestedOne);
-      localStorage.setItem('suggestedTwo' , suggestedTwo);
-      localStorage.setItem('suggestedThree' , suggestedThree);
 
-      document.getElementById('city-one').textContent = localStorage.getItem('suggestedOne');
-document.getElementById('city-two').textContent = localStorage.getItem('suggestedTwo');
-document.getElementById('city-three').textContent = localStorage.getItem('suggestedThree');
 
     document.getElementById("city").innerHTML = city
     console.log(city);
